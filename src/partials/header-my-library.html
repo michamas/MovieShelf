@@ -1,0 +1,45 @@
+<header class="HeaderMain">
+  <nav class="Navbar">
+    <div class="NavbarContainer">
+      <!-- start navbar left side -->
+      <div class="NavbarHeader">
+        <a class="NavbarBrand PageMain" href="./index.html">
+          <svg class="NavbarBrandIcon" width="24" height="24" viewBox="0 0 1 1">
+            <use href="../icons/icons.svg#icon-film"></use>
+          </svg>
+        </a>
+        <a class="NavbarBrand PageMain NavbarBrandTxt" href="./index.html"
+          >Filmoteka</a
+        >
+      </div>
+      <!-- end navbar left side -->
+
+      <!-- start navbar right side -->
+      <div class="Collapse NavbarCollapse">
+        <ul class="Nav NavbarRight">
+          <li class="">
+            <a class="NavPageHome" href="./index.html">Home</a>
+          </li>
+          <li class="">
+            <a id="active-nav" class="NavPageMyLibrary" href="./my-library.html"
+              >My Library</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- end navbar right side -->
+    </div>
+    <!-- start buttons -->
+    <div class="Header__Buttons">
+      <button
+        class="Header__Button Header__Button--Active"
+        data-library="watched"
+      >
+        <!-- <span></span> -->
+        WATCHED
+      </button>
+      <button class="Header__Button" data-library="queue">QUEUE</button>
+    </div>
+    <!-- end buttons -->
+  </nav>
+</header>

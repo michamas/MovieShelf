@@ -2,14 +2,14 @@
   "name": "movieshelf",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Hubuuus/MovieShelf",
+  "homepage": "https://github.com/Hubuuus/MovieShelf.js.git",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /movieshelf/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hubuuus/MovieShelf"
+    "url": "git+https://github.com/Hubuuus/MovieShelf.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
@@ -18,10 +18,16 @@
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "dependencies": {
-    "modern-normalize": "^1.1.0"
+    "axios": "^1.3.2",
+    "js-paginator": "^0.0.3",
+    "lodash": "^4.17.21",
+    "lodash.debounce": "^4.0.8",
+    "modern-normalize": "^1.1.0",
+    "notiflix": "^3.2.6"
   },
   "devDependencies": {
     "@parcel/transformer-sass": "^2.6.0",
+    "buffer": "^6.0.3",
     "parcel": "^2.6.0",
     "parcel-reporter-clean-dist": "^1.0.4",
     "posthtml-include": "^1.7.4"
