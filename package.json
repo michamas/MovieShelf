@@ -2,14 +2,14 @@
   "name": "movieshelf",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Hubuuus/MovieShelf",
+  "homepage": "https://hubuuus.github.io/MovieShelf/",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /movieshelf/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hubuuus/MovieShelf.git"
+    "url": "git+https://hubuuus.github.io/MovieShelf/.git"
   },
   "keywords": [],
   "author": "SixthElement Group",
