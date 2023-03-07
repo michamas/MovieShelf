@@ -1,0 +1,213 @@
+@use '../utils/forward' as *;
+
+//Edytować poniżej
+
+@keyframes blurOverlay {
+  0% {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(0px);
+  }
+
+  100% {
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+  }
+}
+
+@keyframes openModal {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+.ModalFooter {
+  min-width: 250px;
+  max-width: 400px;
+  width: 90%;
+  max-height: 90%;
+  padding: 25px;
+  background-color: $bg-main;
+  overflow-y: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  z-index: 2;
+  animation: openModal 0.5s forwards;
+  &__Logo {
+    display: flex;
+    flex-direction: column;
+    fill: $tx-accent;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 30;
+    top: -120px;
+  }
+  &__Header {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 23px;
+    color: $tx-primary;
+    padding-bottom: 25px;
+  }
+
+  &__List {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: Roboto;
+    font-weight: 500;
+    margin: auto;
+    cursor: pointer;
+    padding-top: 70px;
+  }
+
+  &__Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__Title {
+    background: $tx-accent;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-bottom: 5px;
+    padding: 6px;
+    color: $bg-main;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    cursor: default;
+  }
+
+  &__NoMargin {
+    margin-top: 0px;
+  }
+
+  &__Button {
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    transition: 300ms;
+    background-color: transparent;
+  }
+
+  &__Svg {
+    stroke: currentColor;
+  }
+
+  &__Svg:hover,
+  &__Svg:focus {
+    color: $tx-accent;
+  }
+
+  &__IconFlex {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    transition-property: scale;
+    transition-duration: 300ms;
+  }
+
+  &__IconFlex:hover,
+  &__IconFlex:focus {
+    scale: 1.3;
+  }
+
+  &__LinkStyle {
+    text-decoration: none;
+    border-bottom: none;
+    transition-property: color;
+    transition-duration: 300ms;
+  }
+
+  &__LinkStyle:hover,
+  &__LinkStyle:focus {
+    color: $tx-accent;
+  }
+
+  &__Text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding: 0px;
+  }
+}
+
+.OverlayFooter {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  animation: blurOverlay 0.5s ease forwards;
+}
+
+.IsHidden {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .ModalFooter {
+    max-width: 600px;
+    &__Logo {
+      left: 130;
+    }
+    &__Header {
+      font-size: 30px;
+      line-height: 35px;
+    }
+
+    &__Title {
+      font-size: 20px;
+      line-height: 18px;
+    }
+
+    &__IconFlex {
+      font-size: 16px;
+    }
+
+    &__Containers {
+      display: flex;
+      justify-content: space-around;
+      align-items: baseline;
+    }
+
+    &__RightSide {
+      justify-content: flex-start;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .ModalFooter {
+    max-width: 800px;
+    &__Logo {
+      left: 230px;
+    }
+    &__RightSide {
+      justify-content: flex-start;
+    }
+  }
+}
