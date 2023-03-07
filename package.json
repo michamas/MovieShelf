@@ -5,7 +5,7 @@
   "homepage": "https://github.com/Hubuuus/MovieShelf.git",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /movieshelf/"
+    "build": "parcel build src/*.html --public-url /MovieShelf/"
   },
   "repository": {
     "type": "git",
