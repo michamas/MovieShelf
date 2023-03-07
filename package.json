@@ -2,17 +2,17 @@
   "name": "movieshelf",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Hubuuus/movieshelf",
+  "homepage": "https://github.com/Hubuuus/MovieShelf",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /movieshelf/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hubuuus/movieshelf.git"
+    "url": "git+https://github.com/Hubuuus/MovieShelf.git"
   },
   "keywords": [],
-  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
+  "author": "SixthElement Group",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goitacademy/parcel-project-template/issues"
