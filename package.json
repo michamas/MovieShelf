@@ -2,14 +2,14 @@
   "name": "movieshelf",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://github.com/Hubuuus/MovieShelf.git",
+  "homepage": "https://github.com/Hubuuus/MovieShelf",
   "scripts": {
     "start": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /movieshelf/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hubuuus/MovieShelf.git"
+    "url": "git+https://github.com/Hubuuus/MovieShelf"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
